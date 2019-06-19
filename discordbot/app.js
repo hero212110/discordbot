@@ -85,16 +85,6 @@ bot.on('message', msg => {
 
   }
 
-  function delete_poke() {
-
-    if (keyword.indexOf('pokémon', 0) >= 0) {
-      msg.delete()
-        .catch(console.error);
-    }
-
-  }
-
-
   function negative() {
 
     var negative_val = Math.floor(Math.random() * 100);
@@ -135,8 +125,6 @@ bot.on('message', msg => {
   random_decision();
   insulting();
   negative();
-  delete_poke();
-
 
 });
 
